@@ -1,6 +1,6 @@
 <?php
 class Vehicle {
-    var make;
+    public make;
 
     function set_make($make){
         $this->make = $make;
