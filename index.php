@@ -3,7 +3,6 @@ class Vehicle {
     var make;
 
     function set_make($make){
-    
         $this->make = $make;
     }
     function get_make($make){
