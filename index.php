@@ -5,7 +5,7 @@ class Vehicle {
     function set_make($make){
         $this->make = $make;
     }
-    function get_make($make){
+    function get_make(){
         return $this->make;
     }
 
