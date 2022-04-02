@@ -1,22 +1,23 @@
 <?php
 class Vehicle {
-    public $make;
+    private $make;
 
-    function set_make($make){
-        $this->make = $make;
+    public function set_make($make) 
+    {
+         $this->make = $make;
     }
-    function get_make(){
-        return $this->make;
+    public function beep()
+    {
+        return "beep! I am a " . $this->make . "<br>";
     }
-
 }
 
-$mustang = new Vehicle ();
-$toyota = new Vehicle();
-$mustang->set_make('MUSTANG');
-$toyota->set_make('TOYOTA');
+class Car extends Vehicle
+{
 
-echo $mustang->get_make();
-echo "<br>";
-echo $toyota->get_make();
+}
+$car1 = new Car();
+$car1->set_make('Mustang');
+
+echo $car1->beep();
 ?>
